@@ -2,22 +2,26 @@
   "name": "php-ioc",
   "title": "PHP版本的IOC框架",
   "description": "PHP版本的IOC框架",
-  "version": "0.1.0",
-  "homepage": "https://github.com/Administrator/jquery",
+  "version": "0.0.4",
+  "homepage": "https://github.com/peigong/php-ioc",
   "author": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/Administrator/jquery.git"
+    "url": "https://github.com/peigong/php-ioc.git"
   },
-  "bugs": "https://github.com/Administrator/jquery/issues",
+  "bugs": "https://github.com/peigong/php-ioc/issues",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Administrator/jquery/blob/master/LICENSE-MIT"
+      "url": "https://github.com/peigong/php-ioc/blob/master/LICENSE-MIT"
     }
   ],
   "dependencies": {
-    "jquery": "*"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt": "~0.4.1"
+  }
 }
