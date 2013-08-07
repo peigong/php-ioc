@@ -1,0 +1,21 @@
+{
+  "name": "php-ioc",
+  "version": "0.0.0",
+  "description": "IOC框架依赖于缓存框架PHP-CACHE 0.0.0.1版本。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peigong/php-ioc.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/peigong/php-ioc/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
