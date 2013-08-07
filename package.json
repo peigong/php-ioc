@@ -1,21 +1,23 @@
 {
   "name": "php-ioc",
-  "version": "0.0.0",
-  "description": "IOC框架依赖于缓存框架PHP-CACHE 0.0.0.1版本。",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "title": "PHP版本的IOC框架",
+  "description": "PHP版本的IOC框架",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Administrator/jquery",
+  "author": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/peigong/php-ioc.git"
+    "url": "git://github.com/Administrator/jquery.git"
   },
-  "author": "",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/peigong/php-ioc/issues"
+  "bugs": "https://github.com/Administrator/jquery/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Administrator/jquery/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
   },
-  "devDependencies": {
-    "grunt": "~0.4.1"
-  }
+  "keywords": []
 }
