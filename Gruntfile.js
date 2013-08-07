@@ -18,9 +18,9 @@ module.exports = function(grunt) {
     copy:{
       main:{
         files: [
-          //{expand: true, src: ['demo/**'], dest: 'dest/demo'},
-          {expand: true, cwd: 'libs', src: ['php-cache-0.0.0.1/inc'], dest: './dest/demo/inc'}, 
-          {expand: true, src: ['src/inc/**'], dest: './dest/demo/inc'}
+          //{expand: true, src: ['demo/**'], dest: 'dist/demo'},
+          {expand: true, src: ['libs/php-cache-0.0.0.1/inc/**'], dest: 'dist/demo/inc'}, 
+          {expand: true, src: ['src/inc/**'], dest: 'dist/demo/inc'}
         ]
       }
     }
