@@ -22,8 +22,8 @@ module.exports = function(grunt) {
           {expand: true, cwd: 'src/inc', src: ['**'], dest: 'dist/inc'},
           {expand: true, cwd: 'src/inc', src: ['**'], dest: 'dist/inc.all'},
           {expand: true, cwd: 'src/inc', src: ['**'], dest: 'dist/demo/inc'},
-          {expand: true, cwd: 'libs/php-cache-0.0.1/dist/inc', src: ['**'], dest: 'dist/inc.all'}, 
-          {expand: true, cwd: 'libs/php-cache-0.0.1/dist/inc', src: ['**'], dest: 'dist/demo/inc'}
+          {expand: true, cwd: 'libs/php-cache-0.0.2/dist/inc', src: ['**'], dest: 'dist/inc.all'}, 
+          {expand: true, cwd: 'libs/php-cache-0.0.2/dist/inc', src: ['**'], dest: 'dist/demo/inc'}
         ]
       }
     }

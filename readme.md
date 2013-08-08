@@ -3,7 +3,7 @@
 ## 项目依赖 ##
 在构建当前项目前，需要先在当前目录下的GIT命令行中clone以下依赖项目的分支：
 
- * 缓存框架PHP-CACHE：git clone https://github.com/peigong/php-cache.git --branch 0.0.1 ./libs/php-cache-0.0.1
+ * 缓存框架PHP-CACHE：git clone https://github.com/peigong/php-cache.git --branch 0.0.2 ./libs/php-cache-0.0.2
 
 ## 使用说明 ##
  * 需要使用定义WEB系统根目录的静态常量ROOT。
