@@ -3,7 +3,7 @@
 ## 项目依赖 ##
 在构建当前项目前，需要先在当前目录下的GIT命令行中clone以下依赖项目的分支：
 
- * 缓存框架PHP-CACHE：git clone https://github.com/peigong/php-cache.git --branch 0.0.2 ./libs/php-cache-0.0.2
+ * PHP版本的缓存机制框架：git clone https://github.com/peigong/php-cache.git --branch 0.0.2 ./libs/php-cache-0.0.2
 
 ## 使用说明 ##
  * 需要使用定义WEB系统根目录的静态常量ROOT。
@@ -18,6 +18,8 @@
  * demo：对PHP IOC类库用法的演示。
 
 ## 版本更新记录 ##
+### 0.0.5 ###
+ * 将IOC配置文件的默认目录修改为conf/ioc。
 ### 0.0.4 ###
  * 增加了添加IOC配置目录接口方法setConfigPath。
  * 调整了使用缓存机制的位置。

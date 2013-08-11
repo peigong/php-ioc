@@ -19,7 +19,7 @@ class FileSystemXmlApplicationContext implements IApplicationContext{
      */
     function  __construct(){
         // 设置默认配置目录
-        $this->setConfigPath(ROOT . 'conf');
+        $this->setConfigPath(ROOT . 'conf/ioc');
     }
     
     /**
