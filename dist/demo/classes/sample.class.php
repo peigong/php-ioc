@@ -1,5 +1,5 @@
 <?php
-require_once(ROOT. "classes/basic.class.php");
+require_once(ROOT . "classes/basic.class.php");
 require_once(ROOT . "inc/core/ioc/applicationcontext.inc.php");
 
 class Sample extends Basic implements IInjectEnable{

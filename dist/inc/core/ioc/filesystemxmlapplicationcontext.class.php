@@ -5,7 +5,6 @@ require_once(ROOT . "inc/core/cache/cachefactory.class.php");
  * 应用程序上下文对象的文件系统XML格式存储实现。
  */
 class FileSystemXmlApplicationContext implements IApplicationContext{	
-    private $root = ROOT;
     private $arr_config_path = array();
     private $config_suffix = "conf.xml";
     private $cache = null;
@@ -19,7 +18,7 @@ class FileSystemXmlApplicationContext implements IApplicationContext{
      */
     function  __construct(){
         // 设置默认配置目录
-        if (defined(ROOT)) {
+        if (defined('ROOT')) {
             $this->setConfigPath(ROOT . 'conf/ioc', ROOT);
         }
     }
@@ -36,12 +35,13 @@ class FileSystemXmlApplicationContext implements IApplicationContext{
      * @param String $root 寻找类定义文件的起始根目录。
      */
     function setConfigPath($path, $root = ''){
-        if(('' == $root) && defined(ROOT)){
+        $root = trim($root);
+        if((0 == strlen($root)) && defined('ROOT')){
             $root = ROOT;
         }
         if (strlen($root) > 0) {
             $path = realpath($path);
-            if (!array_key_exists($path, $this->arr_config_path) {
+            if (!array_key_exists($path, $this->arr_config_path)) {
                 $this->arr_config_path[$path] = $root;
             }
         }
@@ -167,7 +167,7 @@ class FileSystemXmlApplicationContext implements IApplicationContext{
                                 "name" => $property_name, 
                                 "ref" => $property_ref,
                                 "class" => $property_class, 
-                                "path" => $root . '/' . $$property_path
+                                "path" => $root . '/' . $property_path
                             ));
                         }
                     }
