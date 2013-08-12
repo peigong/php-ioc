@@ -39,7 +39,7 @@ class FileSystemXmlApplicationContext implements IApplicationContext{
         if((0 == strlen($root)) && defined('ROOT')){
             $root = ROOT;
         }
-        if (strlen($root) > 0) {
+        if (file_exists($path) && (strlen($root) > 0)) {
             $path = realpath($path);
             if (!array_key_exists($path, $this->arr_config_path)) {
                 $this->arr_config_path[$path] = $root;
