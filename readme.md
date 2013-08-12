@@ -6,7 +6,6 @@
  * PHP版本的缓存机制框架：git clone https://github.com/peigong/php-cache.git --branch 0.0.2 ./libs/php-cache-0.0.2
 
 ## 使用说明 ##
- * 需要使用定义WEB系统根目录的静态常量ROOT。
  * 在正式的商业系统中使用时，需要在WEB服务器上（如Apache、Ngix），把IOC配置目录（如conf）设置为禁止外部访问。
  * 框架默认的IOC配置目录是WEB系统根目录ROOT下的conf目录。
 
@@ -18,6 +17,11 @@
  * demo：对PHP IOC类库用法的演示。
 
 ## 版本更新记录 ##
+
+### 0.0.6 ###
+ * 设置IOC配置目录时，规范化绝对路径名，并且检查配置信息，阻止同样的目录重复设置。
+ * 设置IOC配置目录的接口方法setConfigPath增加寻找类定义文件的起始根目录参数。
+
 ### 0.0.5 ###
  * 将IOC配置文件的默认目录修改为conf/ioc。
 
